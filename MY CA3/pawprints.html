@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawprints</title>
+    <link rel="stylesheet" href="pawprint.css">
+    <style>
+        .read-more-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .read-more-button {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        .read-more-button:hover {
+            color: #0056b3;
+        }
+       
+      
+    </style>
+</head>
+<body>
+<header>
+ 
+    <img src="logo.png" alt="Pawprints Logo" width="10px" >
+    <h1>Pawprints</h1>
+
+    <nav>
+        <ul>
+            <li><a href="aboutpawprints.html">About</a></li>
+            <li><a href="dogfood.html">Dog Food</a></li>
+            <li><a href="treats.html">Treats</a></li>
+            <li><a href="toys.html">Toys</a></li>
+            <li><a href="daycare.html">Daycare</a></li>
+            <li><a href="medicines.html">Medicines</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="about">
+    <h2>Welcome to Pawprints!</h2>
+    <p>At Pawprints, we offer everything your dog needs to stay happy, healthy, and well-fed! From high-quality dog food to fun toys, we have it all. Our products are carefully selected to ensure the best for your furry friends.</p>
+    <p>Click on the categories in the menu above to explore our collection of dog food, treats, bowls, daycare services, and more.</p>
+    <br><br><br>
+    <h2>Unconditional Love and Lifelong Benefits: How Dogs Enrich Our Lives</h2>
+    <p>Dogs are often called "man's best friend" for good reason, as they play a significant role in our lives, offering both emotional and physical benefits. As loyal companions, dogs provide unconditional love and support, making them an excellent source of comfort and companionship for individuals and families alike. Their presence has been shown to reduce stress, anxiety, and depression, offering a sense of security and companionship, especially for those living alone or facing difficult situations. Beyond emotional well-being, dogs also promote physical health. Regular walks and playtime help encourage an active lifestyle, benefiting both the dog and their owner. Additionally, dogs serve as valuable protectors, alerting their owners to potential dangers, and assisting those with disabilities, such as guide dogs for the visually impaired. With their remarkable ability to forge deep emotional bonds with humans, dogs have become indispensable members of many households, enhancing quality of life in countless ways.</p>
+</section>
+<h2>Popular breeds</h2><br><br>
+<div class="breed">
+    <h3>Golden Retriever</h3>
+    <img src="golden.jpg" alt="Golden Retriever">
+    <p>Golden Retrievers are known for their friendly, intelligent, and loving nature, making them excellent family dogs.</p>
+    <span class="read-more-button" onclick="toggleContent('golden-retriever')">Read More</span>
+    <div id="golden-retriever" class="read-more-content">
+        <h4>Common Health Issues:</h4>
+        <ul>
+            <li>Hip Dysplasia</li>
+            <li>Cancer (Hemangiosarcoma, Lymphoma)</li>
+            <li>Skin Allergies</li>
+        </ul>
+        <h4>Treatments/Medications:</h4>
+        <ul>
+            <li>Chemotherapy and surgery for cancer treatment.</li>
+            <li>Joint supplements like glucosamine for hip dysplasia.</li>
+            <li>Antihistamines or allergy-specific medications for skin issues.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="breed">
+    <h3>Beagle</h3>
+    <img src="beagle.jpg" alt="Beagle">
+    <p>Beagles are friendly, curious, and great companions, often loved for their affectionate nature.</p>
+    <span class="read-more-button" onclick="toggleContent('beagle')">Read More</span>
+    <div id="beagle" class="read-more-content">
+        <h4>Common Health Issues:</h4>
+        <ul>
+            <li>Hip Dysplasia</li>
+            <li>Epilepsy</li>
+            <li>Obesity</li>
+        </ul>
+        <h4>Treatments/Medications:</h4>
+        <ul>
+            <li>Anticonvulsants for epilepsy (e.g., phenobarbital).</li>
+            <li>Joint supplements and weight management diets.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="breed">
+    <h3>Bulldog</h3>
+    <img src="bulldog.jpg" alt="Bulldog">
+    <p>Bulldogs are courageous and loving dogs, often known for their laid-back and friendly nature.</p>
+    <span class="read-more-button" onclick="toggleContent('bulldog')">Read More</span>
+    <div id="bulldog" class="read-more-content">
+        <h4>Common Health Issues:</h4>
+        <ul>
+            <li>Brachycephalic Syndrome</li>
+            <li>Hip Dysplasia</li>
+            <li>Skin Infections</li>
+        </ul>
+        <h4>Treatments/Medications:</h4>
+        <ul>
+            <li>Surgery for breathing problems (like widening the nostrils).</li>
+            <li>Antibiotics for skin infections.</li>
+            <li>NSAIDs for joint pain relief.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="breed">
+    <h3>Poodle</h3>
+    <img src="poodle.webp" alt="Poodle">
+    <p>Poodles are intelligent, active, and elegant dogs, known for their hypoallergenic coat.</p>
+    <span class="read-more-button" onclick="toggleContent('poodle')">Read More</span>
+    <div id="poodle" class="read-more-content">
+        <h4>Common Health Issues:</h4>
+        <ul>
+            <li>Hip Dysplasia</li>
+            <li>Addison's Disease</li>
+            <li>Cushing’s Disease</li>
+        </ul>
+        <h4>Treatments/Medications:</h4>
+        <ul>
+            <li>Hormone replacement therapy for Addison's disease.</li>
+            <li>Medications to control Cushing’s disease.</li>
+            <li>Joint supplements for hip dysplasia.</li>
+        </ul>
+    </div>
+</div>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <!-- <form id="contact-form"> -->
+        <form>
+        <input type="text" id="n1" placeholder="Your Name" required>
+        <span style="color:red";>*</span>
+        <input type="email" id="n2" placeholder="Your Email" required><span style="color:red";>*</span>
+        <textarea placeholder="Your Message"  required></textarea><br>
+        <input type="submit" value="login" style="background-color: red; width:100px; height:100px;">
+    </form>
+</section>
+<footer>
+    <p>&copy; 2024 Pawprints. All rights reserved.</p>
+</footer>
+
+<script>
+   /* function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }*/
+   function mydata(){
+   var a=document.getElementById("n1").value;
+   var b=document.getElementById("n2").value;
+   if(a==""||b=="")
+   {
+alert("insert data here");
+return false;
+   }
+   else{
+    true;
+   }
+
+
+</script>
+
+</body>
+</html>
